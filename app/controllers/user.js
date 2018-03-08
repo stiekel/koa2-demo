@@ -3,7 +3,7 @@ module.exports = {
     ctx.body = {
       status: true,
       data: {
-        username: 'Sid',
+        username: ctx.request.body.username,
         at: new Date()
       }
     }
